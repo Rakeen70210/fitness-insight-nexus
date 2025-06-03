@@ -1,6 +1,7 @@
 
-import { Calendar, User, Settings } from "lucide-react";
+import { Calendar, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { UserProfile } from "./UserProfile";
 
 interface HealthHeaderProps {
   selectedDate: Date;
@@ -36,9 +37,7 @@ export const HealthHeader = ({ selectedDate, onDateChange }: HealthHeaderProps) 
           <Settings className="h-4 w-4" />
         </Button>
         
-        <Button variant="ghost" size="icon" className="rounded-full bg-white/70 backdrop-blur-sm hover:bg-white/90">
-          <User className="h-4 w-4" />
-        </Button>
+        <UserProfile />
       </div>
     </div>
   );
